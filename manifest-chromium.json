@@ -1,0 +1,34 @@
+{
+	"manifest_version": 3,
+	"name": "MIT Json Editor",
+	"description": "A utility for viewing, editing, formatting, repairing, querying, transforming, and validating JSON data.",
+	"version": "1.0.2",
+	"icons": {
+		"16": "images/icon-16.png",
+		"32": "images/icon-32.png",
+		"48": "images/icon-48.png",
+		"128": "images/icon-128.png"
+	},
+	"content_scripts": [
+		{
+			"js": [
+				"content.js"
+			],
+			"matches": [
+				"<all_urls>"
+			]
+		}
+	],
+	"web_accessible_resources": [
+		{
+			"resources": [
+				"json-editor-standalone.js",
+				"themes/*"
+			],
+			"matches": [
+				"<all_urls>"
+			],
+			"extension_ids": []
+		}
+	]
+}
