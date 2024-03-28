@@ -2,7 +2,7 @@
 	"manifest_version": 3,
 	"name": "MIT Json Editor",
 	"description": "A utility for viewing, editing, formatting, repairing, querying, transforming, and validating JSON data.",
-	"version": "1.0.2",
+	"version": "1.0.4",
 	"icons": {
 		"16": "images/icon-16.png",
 		"32": "images/icon-32.png",
