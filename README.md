@@ -1,29 +1,42 @@
-# JSON Editor
+# MIT Json Editor
 
-![small-promo-tile](https://github.com/croespino/browser-json-editor/assets/6217775/ac369c8a-162f-43a3-ae56-ed2cda837b23)
+![small-promo-tile](https://raw.githubusercontent.com/mitsh/mit-json-editor/main/assets/promo-small.png)
+
+```bash
+cd ~/Documents/works/github/svelte-jsoneditor
+npm run build
+cp ~/Documents/works/github/svelte-jsoneditor/package-vanilla/standalone.js ~/Documents/works/gitlab/mit/mit-json-editor/src/json-editor-standalone.js
+```
 
 A browser extension to view, edit, format, repair, query, transform, and validate JSON directly on the browser.
 It uses the powerful [svelte-jsoneditor](https://github.com/josdejong/svelte-jsoneditor/) by Jos de Jong and the Manifest V3 for enhanced security, privacy, and performance.
 
-**[Watch the video!](https://youtu.be/WnsLXRYOO0g)**
+[//]: # (**[Watch the video!]&#40;https://youtu.be/WnsLXRYOO0g&#41;**)
 
 ## Installation
 
 - Chrome 
-    - Go to https://chrome.google.com/webstore/detail/json-editor/jcamcakkifmbkjcfejgboieeliaomkab
+    - Go to https://chromewebstore.google.com/detail/mit-json-editor/cimehchdondaofhgiiemdicnclbblfjc
     - To allow access to local JSON files
         - Go to `chrome://extensions/`
-        - Click on "Details" for JSON Editor
+        - Click on "Details" for MIT Json Editor
         - Click on "Allow access to file URLs"
-- Edge 
-    - Go to https://microsoftedge.microsoft.com/addons/detail/json-editor/neoimeagehobomgpgmdlcahdjlcjimla
-    - Click on "Get"
-    - To allow access to local JSON files
-        - Go to `edge://extension`
-        - Click on "Details" for JSON Editor
-        - Click on "Allow access to file URLs"
+
+[//]: # (- Edge )
+
+[//]: # (    - Go to https://microsoftedge.microsoft.com/addons/detail/json-editor/neoimeagehobomgpgmdlcahdjlcjimla)
+
+[//]: # (    - Click on "Get")
+
+[//]: # (    - To allow access to local JSON files)
+
+[//]: # (        - Go to `edge://extension`)
+
+[//]: # (        - Click on "Details" for MIT Json Editor)
+
+[//]: # (        - Click on "Allow access to file URLs")
 - Firefox 
-    - Go to https://addons.mozilla.org/addon/browser-json-editor/ and install the add-on.
+    - Go to https://addons.mozilla.org/en-US/firefox/addon/mit-json-editor/ and install the add-on.
     - Go to `about:addons`.
     - Click on the extension.
     - Click on "Permissions" and enable the permission for all sites. Otherwise, the extension won't work. Refer to "Why is the access to all URL sites needed?" for more info.
@@ -53,13 +66,13 @@ Make sure to disable any other JSON viewing built-in into the browser or other b
 
 ### Why is the access to all URL sites needed?
 
-To render the JSON Editor UI on any web pages with JSON content or JSON files opened with the browser, the content script execution needs to happen on all URLs.
+To render the MIT Json Editor UI on any web pages with JSON content or JSON files opened with the browser, the content script execution needs to happen on all URLs.
 
 ### What data do you collect?
 
-JSON Editor does not collect or store any of your data, or track your usage in any way, and will never do so.
+MIT Json Editor does not collect or store any of your data, or track your usage in any way, and will never do so.
 
-Check the full [JSON Editor's privacy policy](https://github.com/croespino/browser-json-editor/blob/master/PRIVACY.md).
+Check the full [MIT Json Editor's privacy policy](https://raw.githubusercontent.com/mitsh/mit-json-editor/main/PRIVACY.md).
 
 ## Development
 
@@ -79,13 +92,18 @@ After making changes to the extension's sources, build the extension again.
 - Select the extension's `build-chromium/` folder.
 - After making changes to the extension's sources, build the extension again and click on "Reload".
 
-### Development on Microsoft Edge
+[//]: # (### Development on Microsoft Edge)
 
-- Go to `edge://extensions/`
-- Enable the "Developer mode"
-- Click on "Load unpacked"
-- Select the extension's `build-chromium/` folder.
-- After making changes to the extension's sources, build the extension again and click on "Reload".
+[//]: # ()
+[//]: # (- Go to `edge://extensions/`)
+
+[//]: # (- Enable the "Developer mode")
+
+[//]: # (- Click on "Load unpacked")
+
+[//]: # (- Select the extension's `build-chromium/` folder.)
+
+[//]: # (- After making changes to the extension's sources, build the extension again and click on "Reload".)
 
 ### Development on Mozilla Firefox
 

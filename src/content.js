@@ -77,14 +77,14 @@ if (jsonContent !== false)
 <body>
 <div id="jsoneditor" class="jse-theme-dark"></div>
 <script type="module">
-import { JSONEditor } from '${chrome.runtime.getURL("json-editor-standalone.js")}';
+import { createJSONEditor } from '${chrome.runtime.getURL("json-editor-standalone.js")}';
 
     let content = {
         text: undefined,
         json: ${jsonContent}
     };
     
-    const editor = new JSONEditor({
+    const editor = createJSONEditor({
         target: document.getElementById('jsoneditor'),
         props: {
             content,
