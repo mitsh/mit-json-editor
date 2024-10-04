@@ -14,5 +14,5 @@ chromium:
 package: mozilla chromium
 	rm -rf ./package
 	mkdir -p ./package
-	pushd ./build-mozilla/ && zip -r ../package/mit-json-editor-mozilla-$$(cat ./manifest.json | grep -o '"version": ".*"' | grep -o '\d\.\d.\d').zip ./ && popd
-	pushd ./build-chromium/ && zip -r ../package/mit-json-editor-chromium-$$(cat ./manifest.json | grep -o '"version": ".*"' | grep -o '\d\.\d.\d').zip ./ && popd
+	pushd ./build-mozilla/ && zip -r ../package/mit-json-editor-mozilla-$$(cat ./manifest.json | grep -o '"version": ".*"' | grep -o '\d\+\.\d\+.\d\+').zip ./ && popd
+	pushd ./build-chromium/ && zip -r ../package/mit-json-editor-chromium-$$(cat ./manifest.json | grep -o '"version": ".*"' | grep -o '\d\+\.\d\+.\d\+').zip ./ && popd
